@@ -73,3 +73,15 @@ Email Found: The successfully extracted email addresses.
 Not Found: There is no text-based email on the page (it might be inside an image, or missing entirely).
 
 Error: Page access error.
+
+## 7.Data Cleaning
+Raw scraped data often contains duplicates, empty values, or formatting noise. To prepare a clean mailing list:
+Ensure your raw output file (result_emails_selenium.csv) is generated.
+Run the cleaning script in your terminal:
+
+```bash
+python cleaner.py
+```
+
+The script will filter out invalid entries, remove duplicates, and separate multiple emails found on a single page.
+The final, ready-to-use data will be saved as clean_list_for_sending.csv, formatted with headers (Name, URL, Email) optimized for mail merge tools like YAMM.
