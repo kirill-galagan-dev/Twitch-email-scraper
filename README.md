@@ -2,8 +2,8 @@
 
 ## 1. Setup & Prerequisites
 Before the first run, ensure you have installed:
-* [cite_start]Python (version 3.8 or newer)[cite: 1].
-* [cite_start]Google Chrome (latest version)[cite: 2].
+* Python (version 3.8 or newer).
+* Google Chrome (latest version).
 
 Then, install the required libraries. [cite_start]Open your terminal and run[cite: 3]:
 ```bash
