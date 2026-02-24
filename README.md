@@ -5,7 +5,8 @@ Before the first run, ensure you have installed:
 * Python (version 3.8 or newer).
 * Google Chrome (latest version).
 
-Then, install the required libraries. [cite_start]Open your terminal and run[cite: 3]:
+Then, install the required libraries.Open your terminal and run:
+
 ```bash
 pip install selenium webdriver-manager
 ```
