@@ -88,3 +88,18 @@ python cleaner.py
 
 The script will filter out invalid entries, remove duplicates, and separate multiple emails found on a single page.
 The final, ready-to-use data will be saved as clean_list_for_sending.csv, formatted with headers (Name, URL, Email) optimized for mail merge tools like YAMM.
+
+## 8. Auto Email Sender (AWS SES Integration)
+Once the data is cleaned, the `sender.py` script automates the email outreach process. This transforms the project into a complete End-to-End automation tool.
+
+**Key Features:**
+* **Cloud Integration:** Uses Amazon Web Services (AWS SES) via the `boto3` library for reliable, high-deliverability bulk emailing.
+* **Personalization:** Dynamically parses the CSV file and inserts the streamer's channel name into the HTML and Plain Text email bodies.
+* **Anti-Spam Measures:** Implements randomized delays between sends (6 to 12 seconds) and rotates between multiple subject lines to bypass spam filters.
+* **Safety First:** Prompts for user confirmation before initiating the AWS email blast.
+
+**How to run:**
+1. Open `sender.py` and replace the placeholder `AWS_ACCESS_KEY` and `AWS_SECRET_KEY` with your actual IAM credentials.
+2. Run the script:
+```bash
+python sender.py
