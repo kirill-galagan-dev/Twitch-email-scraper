@@ -8,6 +8,7 @@ Before the first run, ensure you have installed:
 Then, install the required libraries. [cite_start]Open your terminal and run[cite: 3]:
 ```bash
 pip install selenium webdriver-manager
+```
 
 2. Files & Folders
 For the script to work correctly, your project folder must contain two files:
