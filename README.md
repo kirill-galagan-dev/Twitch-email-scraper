@@ -19,7 +19,9 @@ For the script to work correctly, your project folder must contain two files:
   
 Input CSV Format: The file must have headers. It must include a column named URL.
 EXAMPLE:
+
 Channel,URL
+
 EXAMPLE,[https://www.twitch.tv/EXAMPLE](https://www.twitch.tv/EXAMPLE)
 
 ## 3. Configuration (Constants)
